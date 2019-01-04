@@ -130,6 +130,7 @@ def find_the_player(name)
   players.each do |player|
     player[0]
   end
+  name
 end
 
 def num_points_scored(name)
