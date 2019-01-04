@@ -174,7 +174,15 @@ def most_points_scored
 end
 
 def winning_team
-
+  home_team = game_hash[:home][:team_name] 
+  away_team = game_hash[:away][:team_name]
+  home_team_score = 
+  away_team_score =
+  if home_team_score > away_team_score
+      puts home_team
+    else
+      puts away_team
+  end
 end
 
 def player_with_longest_name
