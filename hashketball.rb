@@ -170,11 +170,11 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  
+  players.max_by{|player, stats| stats.fetch(:points)}
 end
 
 def winning_team
-  
+
 end
 
 def player_with_longest_name
