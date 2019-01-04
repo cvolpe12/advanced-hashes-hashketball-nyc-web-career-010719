@@ -168,25 +168,3 @@ end
 def big_shoe_rebounds
   player_biggest_shoe_size.fetch(:rebounds)
 end
-
-def most_points_scored
-  players.max_by{|player, stats| stats.fetch(:points)}
-end
-
-def winning_team
-  home_team = game_hash[:home][:team_name]
-  away_team = game_hash[:away][:team_name]
-  home_team_score = game_hash[:home][:players]["Alan Anderson"][:points] + game_hash[:home][:players]["Reggie Evans"][:points] + game_hash[:home][:players]["Brook Lopez"][:points] + game_hash[:home][:players]["Mason Plumlee"][:points] + game_hash[:home][:players]["Jason Terry"][:points]
-  away_team_score = game_hash[:home][:players]["Jeff Adrien"][:points] + game_hash[:home][:players]["Bismak Biyombo"][:points] + game_hash[:home][:players]["DeSagna Diop"][:points] + game_hash[:home][:players]["Ben Gordon"][:points] + game_hash[:home][:players]["Brendan Haywood"][:points]
-  if home_team_score > away_team_score
-      puts home_team
-    else
-      puts away_team
-  end
-  binding.pry
-end
-winning_team
-
-def player_with_longest_name
-
-end
