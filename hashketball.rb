@@ -127,10 +127,8 @@ def players
 end
 
 def find_the_player(name)
-  players.each do |player|
-    if player[0] == name
-      player
-    end 
+  players.find do |player|
+    player[0] == name
   end
 end
 
