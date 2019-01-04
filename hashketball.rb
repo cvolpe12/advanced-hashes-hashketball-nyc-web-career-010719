@@ -171,7 +171,9 @@ end
 
 def most_points_scored
   players.max_by{|player, stats| stats.fetch(:points)}
+  binding.pry
 end
+most_points_scored
 
 def winning_team
 
