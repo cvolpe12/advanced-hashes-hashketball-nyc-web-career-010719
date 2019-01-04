@@ -174,9 +174,10 @@ def most_points_scored
 end
 
 def winning_team
-  home_team = game_hash[:home][:team_name] 
+  home_team = game_hash[:home][:team_name]
   away_team = game_hash[:away][:team_name]
-  home_team_score = 
+  home_team_score = players.to_s.collect do {|points, ppg| points + ppg}
+    binding.pry
   away_team_score =
   if home_team_score > away_team_score
       puts home_team
