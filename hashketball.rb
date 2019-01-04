@@ -176,9 +176,9 @@ end
 def winning_team
   home_team = game_hash[:home][:team_name]
   away_team = game_hash[:away][:team_name]
-  home_team_score =
+  home_team_score = game_hash[:home][:players]["Alan Anderson"][:points] + game_hash[:home][:players]["Reggie Evans"][:points] + game_hash[:home][:players]["Brook Lopez"][:points] + game_hash[:home][:players]["Mason Plumlee"][:points] + game_hash[:home][:players]["Jason Terry"][:points]
   binding.pry
-  away_team_score =
+  away_team_score = game_hash[:home][:players]["Jeff Adrien"][:points] + game_hash[:home][:players]["Bismak Biyombo"][:points] + game_hash[:home][:players]["DeSagna Diop"][:points] + game_hash[:home][:players]["Ben Gordon"][:points] + game_hash[:home][:players]["Brendan Haywood"][:points]
   if home_team_score > away_team_score
       puts home_team
     else
