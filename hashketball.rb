@@ -178,6 +178,7 @@ def winning_team
   away_team = game_hash[:away][:team_name]
   home_team_score = players.to_s.collect do {|points, ppg| points + ppg}
     binding.pry
+  end
   away_team_score =
   if home_team_score > away_team_score
       puts home_team
