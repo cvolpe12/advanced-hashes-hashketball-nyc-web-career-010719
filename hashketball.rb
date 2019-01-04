@@ -186,6 +186,7 @@ def winning_team
       puts away_team
   end
 end
+winning_team
 
 def player_with_longest_name
 
