@@ -183,8 +183,8 @@ def winning_team
     else
       puts away_team
   end
+  binding.pry
 end
-binding.pry
 winning_team
 
 def player_with_longest_name
