@@ -176,8 +176,8 @@ end
 def winning_team
   home_team = game_hash[:home][:team_name]
   away_team = game_hash[:away][:team_name]
-  home_team_score = 
-    binding.pry
+  home_team_score =
+  binding.pry
   end
   away_team_score =
   if home_team_score > away_team_score
