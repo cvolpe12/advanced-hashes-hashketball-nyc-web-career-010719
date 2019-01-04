@@ -168,3 +168,11 @@ end
 def big_shoe_rebounds
   player_biggest_shoe_size.fetch(:rebounds)
 end
+=======
+#def num_points_scored(players_name)
+#    game_hash.each do |location, team_data|
+#      binding.pry
+#      team_data.each do ||
+#end
+  /home/generic-architect-6740/advanced-hashes-hashketball-nyc-web-career-010719/hashketball.rb:125: syntax error, unexpected keyword_end, expecting '|'
+>>>>>>> 5774e0da9076198638d1ad1e8f7c24a8daa3c01b
