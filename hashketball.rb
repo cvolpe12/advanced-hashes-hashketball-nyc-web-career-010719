@@ -129,7 +129,7 @@ end
 def find_the_player(name)
   players.each do |player|
     binding.pry
-    player(name)
+    player[0]
   end
 end
 
