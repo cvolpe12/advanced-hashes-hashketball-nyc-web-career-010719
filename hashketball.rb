@@ -127,7 +127,10 @@ def players
 end
 
 def find_the_player(name)
-  players.fetch(name)
+  players.each do |player|
+    binding.pry
+    player(name)
+  end
 end
 
 def num_points_scored(name)
